@@ -30,3 +30,4 @@ jobs:
     - name: Push Docker Image
       run: |
         docker push millicentdevopsacr.azurecr.io/codealpha-webserver:${{ github.sha }}
+```
