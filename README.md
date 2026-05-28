@@ -197,7 +197,7 @@ http://millicent-devops-app.eastus.azurecontainer.io
 Millicent Eze
 Cloud & DevOps Engineer
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: https://github.com/millicent-eze
 
 ---
 
