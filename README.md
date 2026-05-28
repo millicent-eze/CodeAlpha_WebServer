@@ -1,35 +1,177 @@
-# CodeAlpha Web Server using Docker
+# Dockerized Web Server Portfolio Project 🚀
 
-## Objective
-Deploy a simple web server using Docker containerization.
+## Project Overview
 
-## Tools Used
-- Docker
-- Nginx
-- HTML
-- GitHub
+This project is a Dockerized portfolio-style web server built during my DevOps Internship at CodeAlpha.
 
-## Steps Performed
-1. Created a simple HTML page
-2. Created Dockerfile
-3. Built Docker image
-4. Ran Docker container
-5. Exposed application on localhost
+The application demonstrates how to containerize and deploy a static web application using Docker and Nginx while applying modern DevOps practices.
 
-## Commands Used
+The project also includes a responsive portfolio landing page showcasing my interests in Cloud Infrastructure, DevOps, Kubernetes, Terraform, and CI/CD Automation.
 
-### Build Image
-docker build -t codealpha-webserver .
+---
 
-### Run Container
+# Technologies Used
+
+* Docker
+* Nginx
+* HTML5
+* CSS3
+* GitHub
+* Git
+* VS Code
+
+---
+
+# Features
+
+* Responsive portfolio landing page
+* Docker containerization
+* Nginx web server deployment
+* Professional UI design
+* Static asset management
+* Custom profile integration
+* Modern DevOps workflow
+
+---
+
+# Project Structure
+
+```bash
+CodeAlpha_WebServer/
+│
+├── Dockerfile
+├── index.html
+├── profile.png.png
+├── README.md
+│
+└── screenshots/
+    ├── docker-build-run.png
+    ├── docker-running.jpg
+    ├── homepage.jpg
+    ├── repository.jpg
+    ├── terminal-1.jpg
+    └── terminal-2.jpg
+```
+
+---
+
+# Dockerfile
+
+```dockerfile
+FROM nginx:latest
+
+COPY . /usr/share/nginx/html
+```
+
+---
+
+# Commands Used
+
+## Build Docker Image
+
+```bash
+docker build --no-cache -t codealpha-webserver .
+```
+
+## Run Docker Container
+
+```bash
 docker run -d -p 8080:80 codealpha-webserver
+```
 
-## Output
-Application successfully running on:
-http://localhost:8080
+## View Running Containers
 
-## What I Learned
-- Docker image creation
-- Container lifecycle
-- Port mapping
-- Web server deployment using Docker
+```bash
+docker ps
+```
+
+## Stop Container
+
+```bash
+docker stop CONTAINER_ID
+```
+
+---
+
+# Application Preview
+
+## Portfolio Landing Page
+
+This screenshot shows the responsive portfolio landing page running successfully inside the Docker container.
+
+![Homepage](screenshots/homepage.jpg)
+
+---
+
+## Docker Build and Run Process
+
+This screenshot captures the successful Docker image build and container execution commands.
+
+![Docker Build](screenshots/docker-build-run.png)
+
+---
+
+## Docker Container Running
+
+This screenshot verifies that the Docker container is actively running and exposing port `8080`.
+
+![Docker Running](screenshots/docker-running.jpg)
+
+---
+
+## Repository Structure
+
+This screenshot displays the complete project structure inside VS Code.
+
+![Repository](screenshots/repository.jpg)
+
+---
+
+## Terminal Commands
+
+These screenshots show the Docker commands executed during the project setup and deployment process.
+
+![Terminal 1](screenshots/terminal-1.jpg)
+
+![Terminal 2](screenshots/terminal-2.jpg)
+
+---
+
+# What I Learned
+
+Through this project, I gained practical experience in:
+
+* Docker image creation
+* Container deployment
+* Nginx configuration
+* Static web hosting
+* Debugging Docker containers
+* Managing static assets inside containers
+* GitHub version control
+* Responsive web design
+* DevOps workflow practices
+
+---
+
+# Future Improvements
+
+* Add CI/CD pipeline using GitHub Actions
+* Deploy application to AWS
+* Integrate Kubernetes deployment
+* Add custom domain support
+* Implement HTTPS with SSL
+
+---
+
+# Author
+
+Millicent Eze
+Cloud & DevOps Engineer
+
+GitHub: https://github.com/YOUR_USERNAME
+
+---
+
+# Internship
+
+This project was completed as part of the CodeAlpha DevOps Internship Program.
