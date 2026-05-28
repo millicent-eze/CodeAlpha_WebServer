@@ -5,13 +5,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t codealpha-webserver .'
+                bat 'docker build -t codealpha-webserver .'
             }
         }
 
         stage('Run Docker Container') {
             steps {
-                sh 'docker run -d -p 8090:80 codealpha-webserver'
+                bat 'docker run -d -p 8090:80 codealpha-webserver'
             }
         }
 
