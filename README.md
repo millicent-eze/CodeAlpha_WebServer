@@ -152,6 +152,35 @@ Through this project, I gained practical experience in:
 * DevOps workflow practices
 
 ---
+#Live Deployment
+# Live Deployment
+
+The application was successfully deployed to Microsoft Azure using Azure Container Registry (ACR) and Azure Container Instances (ACI).
+
+## Cloud Technologies Used
+
+* Microsoft Azure
+* Azure CLI
+* Azure Container Registry (ACR)
+* Azure Container Instances (ACI)
+* Docker
+* Nginx
+
+#Live Deployment on Azure
+
+## Deployment Features
+
+* Public cloud deployment
+* Docker image hosting in Azure
+* Azure-managed container infrastructure
+* Public DNS exposure
+* Production-style deployment workflow
+
+## Live Application URL
+http://millicent-devops-app.eastus.azurecontainer.io
+
+
+---
 
 # Future Improvements
 
