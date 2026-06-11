@@ -95,6 +95,13 @@ docker stop CONTAINER_ID
 
 # Application Preview
 
+#Architecture Diagram
+This screenshot shows the architectural work flow from when a developer pushes a code to git and all the way to the end users
+
+![Archtecture](screenshots/Architecture Diagram_ CodeAlpha-Webserver.gif)
+
+---
+
 ## Portfolio Landing Page
 
 This screenshot shows the responsive portfolio landing page running successfully inside the Docker container.
