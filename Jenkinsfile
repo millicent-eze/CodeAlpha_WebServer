@@ -1,19 +1,11 @@
 pipeline {
-    agent { label 'agent-1' }
+    agent any
 
     stages {
-
-        stage('Build Docker Image') {
+        stage('Test') {
             steps {
-                bat 'docker build -t codealpha-webserver .'
+                echo 'Pipeline started successfully'
             }
         }
-
-        stage('Run Docker Container') {
-            steps {
-                bat 'docker run -d -p 8091:80 codealpha-webserver'
-            }
-        }
-
     }
 }
